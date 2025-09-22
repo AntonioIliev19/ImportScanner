@@ -318,4 +318,9 @@ Run `npm run build` to emit `dist/index.js`, then invoke with `node dist/index.j
 
 ---
 
+## Response
+I added response.pdf to the Response folder. 
+You can see the PDF file as an example.
+
+---
 Happy scanning!
