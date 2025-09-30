@@ -146,7 +146,7 @@ export function scanFile(fileName: string): Ref[] {
   return refs.map((ref) => ({ file: fileName, ...ref }));
 }
 
-function pargeArgs(args: string[]) {
+function parseArgs(args: string[]) {
   const flags = new Set(args.filter((a) => a.startsWith("--")));
 
   const pos = args.filter((a) => !a.startsWith("--"));
@@ -196,7 +196,7 @@ async function main() {
     maxOutputTokens,
     pdfOut,
     cwd,
-  } = pargeArgs(rest);
+  } = parseArgs(rest);
 
   if (targets.length === 0) {
     console.error(
